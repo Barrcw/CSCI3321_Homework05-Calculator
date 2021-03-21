@@ -1,0 +1,109 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 20%, rgba(255,149,0,1) 100%);
+}
+.container {
+    width: 300px;
+    height: 500px;
+    margin: auto;
+    background-color: rgb(2,0,36);
+    padding: 10px;
+    text-align: center;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: 
+        'display display display display'
+        'plus minus multiply divide'
+        'digit-7 digit-8 digit-9 equal'
+        'digit-4 digit-5 digit-6 equal'
+        'digit-1 digit-2 digit-3 equal'
+        'clear clear digit-0 equal';
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.buttons{
+    background-color: rgb(255,149,0) ;
+    cursor: pointer;
+    user-select: none;
+}
+#display {
+    grid-area: display;
+    font-weight: bold;
+    color: black;
+    background-color: silver;
+}
+
+#plus{
+    grid-area: plus;
+}
+
+#minus{
+    grid-area: minus;
+}
+
+#multiply{
+    grid-area: multiply;
+}
+
+#divide{
+    grid-area: divide;
+}
+
+#clear{
+    grid-area: clear;
+}
+
+#digit-0{
+    grid-area: digit-0;
+}
+
+#digit-1{
+    grid-area: digit-1;
+}
+
+#digit-2{
+    grid-area: digit-2;
+}
+
+#digit-3{
+    grid-area: digit-3;
+}
+
+#digit-4{
+    grid-area: digit-4;
+}
+
+#digit-5{
+    grid-area: digit-5;
+}
+
+#digit-7{
+    grid-area: digit-6;
+}
+
+#digit-8{
+    grid-area: digit-8;
+}
+
+#digit-9{
+    grid-area: digit-9;
+}
+
+#equal {
+    grid-area: equal;
+}
+
+p{
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+

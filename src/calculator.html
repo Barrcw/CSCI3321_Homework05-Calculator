@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/calculator.css" type="text/css">
+    <script src="../scripts/calculator.js"></script>
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" name="display" id="display" disabled></input>
+        <div class="buttons" id="digit-0" onclick="display('0')">
+            <p>0</p>
+        </div>
+        <div class="buttons" id="digit-1" onclick="display('1')">
+            <p>1</p>
+        </div>
+        <div class="buttons" id="digit-2" onclick="display('2')">
+            <p>2</p>
+        </div>
+        <div class="buttons" id="digit-3" onclick="display('3')">
+            <p>3</p>
+        </div>
+        <div class="buttons" id="digit-4" onclick="display('4')">
+            <p>4</p>
+        </div>
+        <div class="buttons" id="digit-5" onclick="display('5')">
+            <p>5</p>
+        </div>
+        <div class="buttons" id="digit-6" onclick="display('6')">
+            <p>6</p>
+        </div>
+        <div class="buttons" id="digit-7" onclick="display('7')">
+            <p>7</p>
+        </div>
+        <div class="buttons" id="digit-8" onclick="display('8')">
+            <p>8</p>
+        </div>
+        <div class="buttons" id="digit-9" onclick="display('9')">
+            <p>9</p>
+        </div>
+        <div class="buttons" class="operators" id="plus" onclick="display('+')">
+            <p>+</p>
+        </div>
+        <div class="buttons" class="operators" id="minus" onclick="display('-')">
+            <p>-</p>
+        </div>
+        <div class="buttons" class="operators" id="divide" onclick="display('/')">
+            <p>/</p>
+        </div>
+        <div class="buttons" class="operators" id="multiply" onclick="display('*')">
+            <p>*</p>
+        </div>
+        <div class="buttons" id="equal" onclick="calculate()">
+            <p>=</p>
+        </div>
+        <div class="buttons" id="clear" onclick="clr()">
+            <p>AC</p>
+        </div>
+    </div>
+</body>
+
+</html>
